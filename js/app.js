@@ -142,12 +142,14 @@ const apiResponse = [
     }
 ];
 
+//noinspection JSUnusedLocalSymbols
 function main(e) {
     $(".online").css("opacity", 0.4);
     $(".offline").css("opacity", 0.4);
     all();
 }
 
+//noinspection JSUnusedLocalSymbols
 function all(e) {
     $(".streamerList").children().remove();
 
@@ -155,15 +157,17 @@ function all(e) {
     $(".offline").css("opacity", 0.4);
     $(".all").css("opacity", 1);
 
+    //noinspection JSUnusedLocalSymbols,JSUnusedLocalSymbols
     apiResponse.forEach(function (element, index, apiResponse) {
         if (!("error" in element)) {
-            $(".streamerList").append("<a target='_blank' href='" + element["url"] + "'>" + "<li class='streamerResponse'>" + element["display_name"] + "</li></a>");
+            $(".streamerList").append("<li class='streamerResponse'>" + "<a target='_blank' href='" + element["url"] + "'>" + element["display_name"] + "</a></li>");
         } else {
             $(".streamerList").append("<li class='streamerResponse'>User Not Found!</li>");
         }
     });
 }
 
+//noinspection JSUnusedLocalSymbols
 function online(e) {
     $(".streamerList").children().remove();
 
@@ -171,13 +175,15 @@ function online(e) {
     $(".offline").css("opacity", 0.4);
     $(".online").css("opacity", 1);
 
+    //noinspection JSUnusedLocalSymbols,JSUnusedLocalSymbols
     apiResponse.forEach(function (element, index, apiResponse) {
         if (!("error" in element)) {
-            $(".streamerList").append("<a target='_blank' href='" + element["url"] + "'>" + "<li class='streamerResponse'>" + element["display_name"] + "</li></a>");
+            $(".streamerList").append("<li class='streamerResponse'>" + "<a target='_blank' href='" + element["url"] + "'>" + element["display_name"] + "</a></li>");
         }
     });
 }
 
+//noinspection JSUnusedLocalSymbols
 function offline(e) {
     /*
     if user status is offline, fill stream list with offline users.
