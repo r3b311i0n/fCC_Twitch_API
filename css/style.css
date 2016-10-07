@@ -1,0 +1,61 @@
+/*noinspection CssUnknownTarget*/
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+
+.btnNav {
+    color: inherit;
+    transition-property: color;
+    transition-duration: 1s;
+    text-decoration: none;
+}
+
+.btnNav:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btnNav:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.container-fluid {
+    font-family: "Audiowide", serif;
+    background-color: #7d5bbe;
+}
+
+.header {
+    background-color: white;
+    color: #7d5bbe;
+}
+
+.header h1 {
+    color: #7d5bbe;
+    padding-top: 1rem;
+}
+
+.list-group {
+    padding-top: 2em;
+    list-style: none;
+    text-align: left;
+    float: right;
+}
+
+.logo {
+    float: left;
+    padding-top: 1em;
+    width: 130px;
+    height: 143px;
+}
+
+.streamer {
+    background-color: white;
+}
+
+.streamerList {
+    color: #0e9dd9;
+    font-size: 1.3em;
+}
+
+.streamerResponse {
+    padding-top: 1.3em;
+}
