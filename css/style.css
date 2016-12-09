@@ -1,5 +1,12 @@
 /*noinspection CssUnknownTarget*/
 @import url(https://fonts.googleapis.com/css?family=Audiowide);
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    background: #7d5bbe;
+    padding-right: 10em;
+    padding-left: 10em;
+}
 
 .btnNav {
     color: inherit;
@@ -49,6 +56,7 @@
 
 .streamer {
     background-color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .streamerList {
@@ -58,4 +66,10 @@
 
 .streamerResponse {
     padding-top: 1.3em;
+}
+
+.streamerUnavailable {
+    padding-top: 1.3em;
+    color: #d30000;
+    cursor: default;
 }
